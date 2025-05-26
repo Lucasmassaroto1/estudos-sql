@@ -31,5 +31,18 @@ _____________ALTER TABLE_____________
     » CHANGE (permite a alteração do nome de uma coluna e de suas propriedades, como por ex o tipo)
     » DROP (permite a remoção de uma coluna da tabela)
 
+_____________FILTRANDO REGISTROS (WHERE)_____________
+_____________EXEMPLO_____________
+    » SELECT id_curso, nome_curso FROM tb_cursos WHERE investimento < 500.00
+    » SELECT id_curso, nome_curso FROM tb_cursos WHERE investimento < 500.00 AND carga_horaria > 30
+_____________OPERADORES DE COMPARAÇÃO: [...] WHERE investimento < 500.00_____________
+    == (Igual) » Verifica Se OS Valores Comparados São Iguais
+    < (Menor) » Verifica Se OS Valores Da Esquerda É Menor Que O Valor Da Direita 
+    <= (Menor Igual) » Verifica Se OS Valores Da Esquerda É Menor Ou Igual Ao Valor Da Direita
+    > (Maior) » Verifica Se OS Valores Da Esquerda É Maior Que O Valor Da Direita
+    >= (Maior Igual) » Verifica Se OS Valores Da Esquerda É Maior Ou Igual Ao Valor Da Direita
+_____________OPERADORES LÓGICOS [...] WHERE investimento < 500.00 AND carga_horaria > 30_____________
+    » AND (todas as operações de comparação devem ser verdadeiras)
+    » OR (pelo menos uma das operações de comparação deve ser verdadeiras)
 
 */
